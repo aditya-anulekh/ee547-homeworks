@@ -44,7 +44,7 @@ def count_anagram_factorial(characters):
     """
     characters = characters.lower()
     counts = {char: characters.count(char) for char in characters}
-    return int(factorial(len(characters)) / prod([factorial(i) for i in counts.values()]))
+    return factorial(len(characters)) // prod([factorial(i) for i in counts.values()])
 
 
 class MyHTTPRequestHandler(BaseHTTPRequestHandler):
@@ -98,9 +98,10 @@ class MyHTTPRequestHandler(BaseHTTPRequestHandler):
         # Return server stats and status
         elif path == "/status":
             status_dict = {
-                "time": datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"),
-                "req": str(num_requests),
-                "err": str(errs)
+                "time": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+                # "time": datetime.datetime.utcnow().isoformat(),
+                "req": num_requests,
+                "err": errs
             }
             self.send_response(200)
             self.end_headers()

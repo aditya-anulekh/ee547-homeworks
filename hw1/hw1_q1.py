@@ -37,7 +37,8 @@ def count_anagram_factorial(characters):
     """
     characters = characters.lower()
     counts = {char: characters.count(char) for char in characters}
-    return int(factorial(len(characters)) / prod([factorial(i) for i in counts.values()]))
+    # print(counts)
+    return factorial(len(characters)) // prod([factorial(i) for i in counts.values()])
 
 
 # def count_anagram(characters):
