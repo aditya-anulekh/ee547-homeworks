@@ -11,11 +11,12 @@ let num_errors = 0;
 
 
 function factorial(num) {
-    let result = 1;
+    let result = BigInt(1);
+    num = BigInt(num);
     while (num > 0) {
-        console.log
+        // console.log
         result *= num;
-        num -= 1;
+        num -= BigInt(1);
     }
     return result;
 }
@@ -40,11 +41,12 @@ function anagram(characters) {
     let num_characters = characters.length;
     let char_count = countCharacters(characters);
     let numerator = factorial(num_characters);
-    let denominator = 1;
+    let denominator = BigInt(1);
     for (const value of char_count.values()) {
         denominator *= factorial(value);
     }
-    return (numerator/denominator);    
+    console.log(typeof(denominator));
+    return BigInt(numerator/denominator);    
 }
 
 
@@ -56,7 +58,7 @@ const server = http.createServer((req, res) => {
 
     try {
         switch(req.method.toLocaleLowerCase()) {
-            case 'get':
+            case 'get': 
                 console.error(req.url);
 
                 parsed_url = url.parse(req.url, true);
@@ -99,7 +101,7 @@ const server = http.createServer((req, res) => {
                     httpCode = 404;
                     num_errors += 1;
                 }
-
+            break;
         }
     }
 

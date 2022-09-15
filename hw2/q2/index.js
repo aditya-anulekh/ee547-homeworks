@@ -184,6 +184,7 @@ class TwitterApi {
             return new Promise((resolve, reject) => {
                 // If the response object has 'errors' key, reject the promise
                 if (Object.hasOwn(response.data, 'errors')) {
+                    // console.log(response.data);
                     let t = new EntityNotFoundError();
                     reject(t);
                 }
@@ -210,7 +211,10 @@ class TwitterApi {
                         }
                         resolve(users);
                     }
-                    resolve(users);
+                    else {
+                        console.log(users);
+                        resolve(users);
+                    }
                 }
             }).then(data => callback(null, data)).catch(err => callback(err, null))
         }).catch(errors => {
