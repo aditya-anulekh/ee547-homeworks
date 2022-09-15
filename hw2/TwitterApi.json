@@ -1,0 +1,288 @@
+{
+	"info": {
+		"_postman_id": "62b76e52-9ffa-4da5-9c8e-9afce233ce8a",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api.twitter.com/2/tweets/:id?expansions=author_id&tweet.fields=created_at,public_metrics",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "AAAAAAAAAAAAAAAAAAAAAKrFgwEAAAAA9%2BmF6w615xPUiBxobvH3iV%2F0DfE%3DhA3WAUNooE9FX4JkjCOWtqzXDfCmuAcIhIIuMVT20mFJcbnqjm",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.twitter.com/2/tweets/:id?expansions=author_id&tweet.fields=created_at,public_metrics",
+					"protocol": "https",
+					"host": [
+						"api",
+						"twitter",
+						"com"
+					],
+					"path": [
+						"2",
+						"tweets",
+						":id"
+					],
+					"query": [
+						{
+							"key": "expansions",
+							"value": "author_id"
+						},
+						{
+							"key": "tweet.fields",
+							"value": "created_at,public_metrics"
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1476988122986647553"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.twitter.com/2/users/:id/tweets?expansions=author_id&tweet.fields=created_at,public_metrics",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "AAAAAAAAAAAAAAAAAAAAAKrFgwEAAAAA9%2BmF6w615xPUiBxobvH3iV%2F0DfE%3DhA3WAUNooE9FX4JkjCOWtqzXDfCmuAcIhIIuMVT20mFJcbnqjm",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.twitter.com/2/users/:id/tweets?expansions=author_id&tweet.fields=created_at,public_metrics",
+					"protocol": "https",
+					"host": [
+						"api",
+						"twitter",
+						"com"
+					],
+					"path": [
+						"2",
+						"users",
+						":id",
+						"tweets"
+					],
+					"query": [
+						{
+							"key": "expansions",
+							"value": "author_id"
+						},
+						{
+							"key": "tweet.fields",
+							"value": "created_at,public_metrics"
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "mkbhd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.twitter.com/2/tweets/search/recent?expansions=author_id&tweet.fields=created_at,public_metrics&query=\"iPhone 14\"",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "AAAAAAAAAAAAAAAAAAAAAKrFgwEAAAAA9%2BmF6w615xPUiBxobvH3iV%2F0DfE%3DhA3WAUNooE9FX4JkjCOWtqzXDfCmuAcIhIIuMVT20mFJcbnqjm",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.twitter.com/2/tweets/search/recent?expansions=author_id&tweet.fields=created_at,public_metrics&query=\"iPhone 14\"",
+					"protocol": "https",
+					"host": [
+						"api",
+						"twitter",
+						"com"
+					],
+					"path": [
+						"2",
+						"tweets",
+						"search",
+						"recent"
+					],
+					"query": [
+						{
+							"key": "expansions",
+							"value": "author_id"
+						},
+						{
+							"key": "tweet.fields",
+							"value": "created_at,public_metrics"
+						},
+						{
+							"key": "query",
+							"value": "\"iPhone 14\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.twitter.com/2/tweets/:id/retweeted_by?user.fields=created_at,description,id,location,public_metrics,username,verified,name",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "AAAAAAAAAAAAAAAAAAAAAKrFgwEAAAAA9%2BmF6w615xPUiBxobvH3iV%2F0DfE%3DhA3WAUNooE9FX4JkjCOWtqzXDfCmuAcIhIIuMVT20mFJcbnqjm",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.twitter.com/2/tweets/:id/retweeted_by?user.fields=created_at,description,id,location,public_metrics,username,verified,name",
+					"protocol": "https",
+					"host": [
+						"api",
+						"twitter",
+						"com"
+					],
+					"path": [
+						"2",
+						"tweets",
+						":id",
+						"retweeted_by"
+					],
+					"query": [
+						{
+							"key": "user.fields",
+							"value": "created_at,description,id,location,public_metrics,username,verified,name"
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1082085872554643458"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.twitter.com/2/users/:id?user.fields=created_at,description,id,location,public_metrics,username,verified,name",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "AAAAAAAAAAAAAAAAAAAAAKrFgwEAAAAA9%2BmF6w615xPUiBxobvH3iV%2F0DfE%3DhA3WAUNooE9FX4JkjCOWtqzXDfCmuAcIhIIuMVT20mFJcbnqjm",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.twitter.com/2/users/:id?user.fields=created_at,description,id,location,public_metrics,username,verified,name",
+					"protocol": "https",
+					"host": [
+						"api",
+						"twitter",
+						"com"
+					],
+					"path": [
+						"2",
+						"users",
+						":id"
+					],
+					"query": [
+						{
+							"key": "user.fields",
+							"value": "created_at,description,id,location,public_metrics,username,verified,name"
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "200000000000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.twitter.com/2/users/by/username/:username?user.fields=created_at,description,id,location,public_metrics,username,verified,name",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "AAAAAAAAAAAAAAAAAAAAAKrFgwEAAAAA9%2BmF6w615xPUiBxobvH3iV%2F0DfE%3DhA3WAUNooE9FX4JkjCOWtqzXDfCmuAcIhIIuMVT20mFJcbnqjm",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.twitter.com/2/users/by/username/:username?user.fields=created_at,description,id,location,public_metrics,username,verified,name",
+					"protocol": "https",
+					"host": [
+						"api",
+						"twitter",
+						"com"
+					],
+					"path": [
+						"2",
+						"users",
+						"by",
+						"username",
+						":username"
+					],
+					"query": [
+						{
+							"key": "user.fields",
+							"value": "created_at,description,id,location,public_metrics,username,verified,name"
+						}
+					],
+					"variable": [
+						{
+							"key": "username",
+							"value": "mkbhd"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
