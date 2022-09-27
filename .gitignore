@@ -9,3 +9,11 @@ __pycache__/
 .code/
 
 *.zip
+
+hw1/new_user_credentials.csv
+
+*package-lock.json
+
+hw2/demo.pdf
+hw2/q2/async_await.js
+hw2/q2/credentials.ini
