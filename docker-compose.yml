@@ -4,6 +4,6 @@ services:
     ports:
       - "8088:8088"
     volumes:
-      - "/study/1 USC/3 Fall 2022/EE547/homeworks/hw1/:/homework"
+      - "/study/1 USC/3 Fall 2022/EE547/homeworks:/hw"
     stdin_open: true
     tty: true

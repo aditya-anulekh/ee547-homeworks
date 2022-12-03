@@ -2,6 +2,7 @@ hw1/hw1test-public-22fa-ee547-ac777ba
 hw2/hw2test-public-22fa-ee547
 hw3/hw3test-public-22fa-ee547
 hw4/hw4test-public-22fa-ee547
+hw5/ee547-public-223-fa22
 
 node_modules/
 
@@ -18,3 +19,5 @@ hw1/new_user_credentials.csv
 hw2/demo.pdf
 hw2/q2/async_await.js
 hw2/q2/credentials.ini
+
+./test.js
